@@ -11,7 +11,7 @@
     "new:folder": "mkdir temporal2",
     "delete:docs": "del docs",
     "copy:dist": "copyfiles dist/bases/* ./docs -f",
-    "build:pages": "ng build && (if exist docs (del /s /q docs)) && copyfiles dist/bases/* ./docs -f"
+    "build:pages": "ng build --base-href ./ && (if exist docs (del /s /q docs)) && copyfiles dist/bases/* ./docs -f"
   },
   "private": true,
   "dependencies": {
